@@ -1,0 +1,17 @@
+name = "nafa-audit-sync"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+
+# R2 bucket binding
+[[r2_buckets]]
+binding = "NAFA_BUCKET"
+bucket_name = "nafa-audit-pdfs"
+
+# Environment variables are configured as Cloudflare Worker secrets.
+# Do NOT hardcode secrets here. Set them via:
+#   npx wrangler secret put MONDAY_API_TOKEN
+#   npx wrangler secret put CLOSE_API_KEY
+#   npx wrangler secret put NAFA_FILE_COLUMN_ID
+#   npx wrangler secret put CLOSE_LEAD_ID_COLUMN_ID
+#   npx wrangler secret put CLOSE_NAFA_URL_FIELD_ID
+#   npx wrangler secret put R2_PUBLIC_URL
