@@ -31,12 +31,10 @@ npx wrangler secret put R2_PUBLIC_URL
 
 Pushes to `main` automatically deploy to Cloudflare Workers via GitHub Actions.
 
-Add these as **GitHub repo secrets** (Settings → Secrets and variables → Actions → New repository secret):
+The following GitHub repo secrets are already configured (Settings → Secrets and variables → Actions):
 
-| Secret | Value |
-|---|---|
-| `CLOUDFLARE_ACCOUNT_ID` | `e8e60b65eb8b7ac41a8b9930de4ff5d5` |
-| `CLOUDFLARE_API_TOKEN` | Create at [dash.cloudflare.com/profile/api-tokens](https://dash.cloudflare.com/profile/api-tokens) — use the **Edit Cloudflare Workers** template |
+- `CLOUDFLARE_ACCOUNT_ID`
+- `CLOUDFLARE_API_TOKEN`
 
 ## Local Development
 
